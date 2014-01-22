@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="js/GlobalVariable.js"></script>
+		<script src="js/Game.js"></script>
+		<script src="js/Map.js"></script>
+		
+		<script>
+			function setup() {
+				var canvas = document.getElementById("canvas");
+				canvas.width = WIDTH;
+				canvas.height = HEIGHT;
+				var context = canvas.getContext("2d");
+				
+				new Game(canvas, context).init();
+			};
+			
+			window.onload = function() {
+				setup();
+			};
+		</script>
+	</head>
+	<body>
+		<a id="myAnchor" href="http://www.microsoft.com">Microsoft</a>
+		<input type="button" onclick="changeLink()" value="Change link">
+		<canvas id="canvas" style="border: 1px solid"></canvas>
+	</body>
+</html>

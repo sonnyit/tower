@@ -1,0 +1,13 @@
+var FPS = 50;
+var EPSILON = 1;
+var WIDTH = 400;
+var HEIGHT = 400;
+var UNIT_SIZE = 20;
+var HALF_UNIT_SIZE = UNIT_SIZE/2;
+var MAPS = [];
+
+MAPS.push({
+	numEnemies: 10,
+	roadX:[10,50,50,300,250,90,30,50,160,340,200,WIDTH],
+	roadY:[10,30,50,70,110,100,200,300,220,140,340,HEIGHT],
+});
